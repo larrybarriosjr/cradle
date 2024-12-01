@@ -1,4 +1,5 @@
 import js from "@eslint/js"
+import jsxA11y from "eslint-plugin-jsx-a11y"
 import prettierRecommended from "eslint-plugin-prettier/recommended"
 import reactHooks from "eslint-plugin-react-hooks"
 import reactRefresh from "eslint-plugin-react-refresh"
@@ -23,5 +24,6 @@ export default tseslint.config(
 			"react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
 		},
 	},
+	jsxA11y.flatConfigs.recommended,
 	prettierRecommended,
 )
