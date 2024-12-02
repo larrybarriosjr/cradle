@@ -1,9 +1,7 @@
-import { useSampleStore } from "~/store/sample"
+import SamplePage from "~/pages/SamplePage"
 
 function App() {
-	const [addSample] = useSampleStore((state) => [state.addSample])
-
-	return <button onClick={() => addSample("a")}>Hi</button>
+	return <SamplePage />
 }
 
 export default App

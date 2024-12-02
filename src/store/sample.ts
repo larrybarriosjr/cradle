@@ -1,11 +1,11 @@
-import createStore from "~/lib/zustand/utils"
+import { createStore } from "~/lib/zustand"
 
 type SampleState = {
 	sample: string[]
 	addSample: (sample: string) => void
 }
 
-export const useSampleStore = createStore<SampleState>((set, get) => ({
+const useSampleStore = createStore<SampleState>((set, get) => ({
 	sample: [],
 	addSample: (sample: string) => {
 		set((state) => {
@@ -14,3 +14,5 @@ export const useSampleStore = createStore<SampleState>((set, get) => ({
 		console.log(get().sample)
 	},
 }))
+
+export default useSampleStore
