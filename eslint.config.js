@@ -1,4 +1,5 @@
 import js from "@eslint/js"
+import tanstackQuery from "@tanstack/eslint-plugin-query"
 import jsxA11y from "eslint-plugin-jsx-a11y"
 import prettierRecommended from "eslint-plugin-prettier/recommended"
 import reactHooks from "eslint-plugin-react-hooks"
@@ -24,6 +25,7 @@ export default tseslint.config(
 			"react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
 		},
 	},
+	tanstackQuery.configs["flat/recommended"],
 	jsxA11y.flatConfigs.recommended,
 	prettierRecommended,
 )

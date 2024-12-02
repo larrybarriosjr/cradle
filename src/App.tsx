@@ -1,7 +1,12 @@
+import { TanstackQueryProvider } from "~/lib/tanstack-query"
 import SamplePage from "~/pages/SamplePage"
 
 function App() {
-	return <SamplePage />
+	return (
+		<TanstackQueryProvider>
+			<SamplePage />
+		</TanstackQueryProvider>
+	)
 }
 
 export default App
