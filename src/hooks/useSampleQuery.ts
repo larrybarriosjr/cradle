@@ -3,7 +3,7 @@ import { API_URL } from "~/constants/env"
 import { QUERY_KEYS } from "~/constants/keys"
 import { QUERY_URLS } from "~/constants/urls"
 
-const useSample = () => {
+const useSampleQuery = () => {
 	const query = useQuery({
 		queryKey: [QUERY_KEYS.SAMPLE],
 		queryFn: async () => {
@@ -16,4 +16,4 @@ const useSample = () => {
 	return query
 }
 
-export default useSample
+export default useSampleQuery

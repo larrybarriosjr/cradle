@@ -6,7 +6,7 @@ const queryClient = new QueryClient()
 type Props = {
 	children: React.ReactNode
 }
-const TanstackQueryProvider = ({ children }: Props) => {
+const TanStackQueryProvider = ({ children }: Props) => {
 	return (
 		<QueryClientProvider client={queryClient}>
 			{children}
@@ -15,4 +15,4 @@ const TanstackQueryProvider = ({ children }: Props) => {
 	)
 }
 
-export default TanstackQueryProvider
+export default TanStackQueryProvider
